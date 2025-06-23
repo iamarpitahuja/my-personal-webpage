@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Arpit Ahuja">
+    <meta name="author" content="Arpit Ahuja">
     <meta name="description" content="Personal website of Arpit Ahuja, showcasing projects and skills.">
     <title>Arpit Ahuja</title>
-    <link rel="stylesheet" href="stylesheet\styles.css">
-    <link rel="icon" href="images\favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="images\favicon.svg">
 </head>
 <body>
-    <!--i want to make a load screen-->
     <div id="loader-wrapper">
         <div class="pentagon-loader">
             <span class="loader-letter">A</span>
         </div>
     </div>
 
-    <div id="main-content"> <!--add a display none later to have loading screen-->
-        <!--Nav Bar-->
+    <div id="main-content"> <!-- add style="display: none;" when coding loader-->
+        <!-- Nav Bar -->
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
@@ -37,7 +36,7 @@
             </div>
         </nav>
 
-        <!--intro section-->
+        <!-- intro section -->
         <header id="intro-header">
             <div class="hero-container">
                 <h4 id="firstLine">Hi, my name is</h4>
@@ -45,6 +44,7 @@
                 <h1 id="thirdLine">I design websites and program robots.</h1>
                 <p id="fourthLine">I am a High School Senior and passionate about web development as well as
                 combining hardware and software to create robots.</p>
+                
                 <section id="my-team-btn">
                     <a href="https://www.instagram.com/293z_equinox/" target="_blank">
                         <button id="follow-team-btn">Follow my team!</button>
@@ -53,10 +53,11 @@
             </div>
         </header>
 
-        <!--About me section-->
+        <!-- About Section -->
         <section class="about-section" id="about-me">
             <div class="container">
                 <div class="content-grid">
+                    <!-- Text Content -->
                     <div class="text-content">
                         <div class="header">
                             <span class="section-number">01.</span>
@@ -82,7 +83,7 @@
                             </div>
                         </div>
 
-                        <!--tech i have used-->
+                        <!-- tech i used -->
                         <div class="tech-grid">
                             <div class="tech-tag tech-cpp" data-tech="C++">
                                 <svg class="tech-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -130,7 +131,8 @@
                             </div>
                         </div>
                     </div>
-                    <!--my pic-->
+
+                    <!-- pic of me -->
                     <div class="image-section">
                         <div class="image-container">
                             <div class="image-bg"></div>
@@ -138,12 +140,12 @@
                                 <img src="images\unnamed.jpg" alt="Profile" class="profile-image">
                             </div>
                         </div>
-                    </div>   
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--Projects section-->
+        <!-- Projects Section -->
         <section class="projects-section" id="Projects">
             <div class="container">
                 <div class="projects-header">
@@ -243,6 +245,13 @@
             </div>
         </section>
 
-        <!--Footer-->
+        <!-- Footer -->
+        <footer class="web-footer">
+            <p>© 2025 Arpit Ahuja. All rights reserved.</p>
+            <p>Created by Arpit Ahuja, Credit to: Keijay Huang & Brittany Chiang for UI Inspiration</p>
+        </footer>
+    </div>
+
+    <script src="ui-handler\script.js"></script>
 </body>
 </html>
