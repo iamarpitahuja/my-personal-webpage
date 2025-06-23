@@ -442,6 +442,12 @@ body {
     transition: filter 0.5s ease;
 }
 
+#img-header{
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
 .profile-image:hover {
     filter: grayscale(0%);
 }
