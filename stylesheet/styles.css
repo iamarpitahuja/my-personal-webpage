@@ -11,4 +11,45 @@ body {
     background-color: rgba(249,244,238,255);
 }
 
-/*pentagon loader style*/
+/* Loader Styles */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 2.0s ease;
+}
+
+.pentagon-loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #4caf50;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 3.0s infinite ease-in-out;
+}
+
+.loader-letter {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
