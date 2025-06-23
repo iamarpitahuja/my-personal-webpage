@@ -54,7 +54,7 @@ body {
     }
 }
 
-/*navbar design*/
+/* navbar design */
 .navbar {
     position: fixed;
     top: 0;
@@ -95,10 +95,10 @@ body {
 }
 
 .logo-letter {
-    color:white;
+    color: white;
     font-weight: bold;
     font-size: 1.5rem;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .nav-logo-text {
@@ -154,4 +154,296 @@ body {
     color: #4CAF50;
 }
 
-/*intro styling*/
+/* intro section */
+#intro-header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    background: linear-gradient(135deg, rgba(249,244,238,255) 0%, #ffffff 100%);
+}
+
+.hero-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+#firstLine {
+    color: #fb7185;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    font-family: 'Courier New', monospace;
+}
+
+#secondLine {
+    color: #1f2937;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+}
+
+#thirdLine {
+    color: #6b7280;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+#fourthLine {
+    max-width: 650px;
+    font-size: 1.25rem;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+#my-team-btn {
+    margin-top: 2rem;
+}
+
+#follow-team-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#follow-team-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.3);
+}
+
+/* about me section */
+.about-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+    padding: 5rem 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.text-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.section-number {
+    font-family: 'Courier New', monospace;
+    color: #fb7185;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-size: 3.75rem;
+    font-weight: 300;
+    color: #1f2937;
+    letter-spacing: 0.025em;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    width: 8rem;
+    height: 1px;
+    background-color: #d1d5db;;
+}
+
+.description {
+    margin-bottom: 2rem;
+}
+
+.description p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.tech-header {
+    padding-top: 1rem;
+}
+
+.tech-header h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+/* Technology Grid */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+.tech-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    opacity: 0;
+    animation: techTagFadeIn 0.6s ease-out forwards;
+}
+
+.tech-tag:nth-child(1) { animation-delay: 0.1s; }
+.tech-tag:nth-child(2) { animation-delay: 0.2s; }
+.tech-tag:nth-child(3) { animation-delay: 0.3s; }
+.tech-tag:nth-child(4) { animation-delay: 0.4s; }
+.tech-tag:nth-child(5) { animation-delay: 0.5s; }
+.tech-tag:nth-child(6) { animation-delay: 0.6s; }
+
+.tech-tag:hover {
+    transform: scale(1.05);
+}
+
+.tech-icon {
+    flex-shrink: 0;
+}
+
+.tech-tag span {
+    font-weight: 500;
+}
+
+/* Technology Tag Colors */
+.tech-cpp {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.tech-cpp:hover {
+    background-color: #bfdbfe;
+}
+
+.tech-python {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.tech-python:hover {
+    background-color: #bbf7d0;
+}
+
+.tech-javascript {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.tech-javascript:hover {
+    background-color: #fde68a;
+}
+
+.tech-java {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.tech-java:hover {
+    background-color: #fecaca;
+}
+
+.tech-fusion {
+    background-color: #e0e7ff;
+    color: #4338ca;
+}
+
+.tech-fusion:hover {
+    background-color: #c7d2fe;
+}
+
+.tech-html {
+    background-color: #fce7f3;
+    color: #be185d;
+}
+
+.tech-html:hover {
+    background-color: #fbcfe8;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: scaleIn 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.image-container {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: translateY(-0.5rem);
+}
+
+.image-bg {
+    position: absolute;
+    inset: 0;
+    background-color: #fb7185;
+    border-radius: 0.5rem;
+    transform: rotate(3deg);
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .image-bg {
+    transform: rotate(6deg);
+}
+
+.image-wrapper {
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.profile-image {
+    width: 20rem;
+    height: 24rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.profile-image:hover {
+    filter: grayscale(0%);
+}
+
+/* things I've made */
