@@ -1,8 +1,9 @@
-//loader animation
-window.addEventListener('load', function() {
-    const loader = document.getElementById('loader-wrapper');
-    const content = this.document.getElementById('main-content');
 
+// Loader functionality
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loader-wrapper');
+    const content = document.getElementById('main-content');
+    
     // Wait 500ms after load, then fade out loader and show content
     setTimeout(() => {
         loader.style.opacity = '0';
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.getElementById('nav-links');
 
-
     //navbar scroll and hide funcs
     let lastScrollY = window.scrollY;
     window.addEventListener('scroll', () => {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     //small (mobile) screen nav
-    if(menuToggle && navLinks) {
+    if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
@@ -46,5 +46,5 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.classList.remove('active');
         });
     });
-    
+        
 });
